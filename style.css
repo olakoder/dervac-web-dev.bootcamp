@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    margin: 2.2em 1em;
+}
+
+.advert .container {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.advert img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.cart-image {
+    width: 20px;
+    height: 20px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    font-size: 1em;
+    line-height: 1.7;
+    padding: 0 1.7em;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2.1em;
+    margin: 0.4em 0;
+    line-height: 1;
+    padding: 0 0.7em;
+}
+
+.paragraph {
+    letter-spacing: 3px;
+    margin-top: 0.5em;
+    /* text-shadow: 1px 3px 15px black; */
+}
+
+.tagprice {
+    display: flex;
+    align-items: center;
+
+}
+
+.price-heading {
+    color: rgb(3, 65, 3);
+}
+
+.paragraph-price {
+    margin-top: 0.5em;
+    margin-left: -1.7em;
+    text-decoration: line-through;
+}
+
+.cart {
+    width: 90%;
+    margin: 1em 1.2em;
+    background-color: rgb(3, 65, 3);
+    padding: 0.8em 4em;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 14px;
+    word-spacing: 3px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.cart:focus {
+    outline: none;
+}
+
+.fa {
+    margin-right: 10px; 
+    /* margin-top: -3em; */
+}
+
+button {
+    display: center; 
+    text-align: center;
+    justify-content: center;
+}
+
+span {
+    margin-top: -2em;
+}
+
+
+@media only screen and (min-width: 780px) {
+
+    body {
+        margin: 12em 1em;
+    }
+    .container {
+        width: 780px;
+        margin: 0 auto;
+    }
+
+    .advert .container {
+        display: flex;
+        
+    }
+
+    .col-left {
+        flex: 0 0 50%;
+        background: url(../ADVERT/images/image-product-desktop.jpg);
+        background-size: cover;
+        background-repeat: round;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .advert img {
+        border-radius: 20px 0 0 20px;
+        height: auto;
+        height: 80%;
+    }
+
+    h1 {
+        font-size: 2.6em;
+        text-shadow: 1px 1px 1px lightgray;
+        font-weight: bold;
+    }
+} 
